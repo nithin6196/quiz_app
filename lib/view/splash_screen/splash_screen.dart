@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:quiz_app/core/color_constants/color_constants.dart';
 import 'package:quiz_app/core/image_constants/image_constants.dart';
-import 'package:quiz_app/view/quiz_screen/quiz_screen.dart';
+import 'package:quiz_app/view/category_screen/category_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -14,11 +15,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => QuizScreen(),
+            builder: (context) => const CategoryScreen(),
           ));
     });
     super.initState();
@@ -27,6 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorConstants.normalWhite,
       body: Center(
         child: Image.asset(
           ImageConstants.quizLogo,

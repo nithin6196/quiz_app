@@ -29,9 +29,11 @@ class CustomContainerOption extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              optionLabel,
-              style: TextStyle(color: ColorConstants.normalWhite),
+            Expanded(
+              child: Text(
+                optionLabel,
+                style: TextStyle(color: ColorConstants.normalWhite),
+              ),
             ),
             Icon(
               icon,

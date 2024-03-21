@@ -9,4 +9,6 @@ class ColorConstants {
   static const Color blockColor = Color(0xff6e6e6e);
   static const Color buttonColor = Color(0xff2196f3);
   static const Color normalBlue = Colors.blue;
+  static const Color lightGreen = Color(0xff66cc2a);
+  static const Color lightOrange = Color(0xffe17f36);
 }
